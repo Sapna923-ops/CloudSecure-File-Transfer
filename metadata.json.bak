@@ -1,0 +1,14 @@
+{
+  "a59ee244-da9a-4477-8eab-9b88fd02c8eb": {
+    "id": "a59ee244-da9a-4477-8eab-9b88fd02c8eb",
+    "original_filename": "CS_CCE_1_16.pdf",
+    "stored_filename": "a59ee244-da9a-4477-8eab-9b88fd02c8eb.enc",
+    "original_size": 404569,
+    "encrypted_size": 539512,
+    "sha256_original": "c93fa0724901680407ccedc2c9c5f11124bd3da766046ae81a5d6ae18c61d0d4",
+    "sha256_encrypted": "a16d06488e15fe9fdabab31769c9c43ba5ee507563f42304e67b8f0347d3d89f",
+    "uploaded_at": "2026-10-11 15:28:00",
+    "storage_type": "local",
+    "encryption_algorithm": "AES-128-CBC / Fernet + HMAC-SHA256"
+  }
+}

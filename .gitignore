@@ -1,0 +1,88 @@
+# =============================================================================
+# CloudSecure File Transfer - Git Ignore Configuration
+# =============================================================================
+# Ensures credentials, encryption keys, virtual environments, local databases,
+# and private user data are NEVER committed to GitHub or version control.
+# =============================================================================
+
+# 1. Environment & Secrets (NEVER COMMIT)
+.env
+.env.*
+*.env
+*.env.local
+# Explicitly track the placeholder configuration template
+!.env.example
+
+# 2. Cryptographic Keys & Private Certificates (NEVER COMMIT)
+*.key
+*.pem
+*.cer
+*.crt
+*.pfx
+*.p12
+*.secret
+secret.key
+master.key
+secrets/
+
+# 3. Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 4. Python Bytecode, Caches & Testing Artifacts
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# 5. Local Databases & Audit History (Contains user accounts & passwords)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+database/*.db
+database/*.sqlite*
+instance/
+
+# 6. Local File Storage & Private User Data (Encrypted files & tenant metadata)
+uploads/*
+!uploads/.gitkeep
+*.enc
+metadata.json
+metadata.json.bak
+storage_local/
+
+# 7. Local Backups & Archive Snapshots
+backups/
+*.bak
+*.backup
+
+# 8. AWS Credentials & Cloud SDK Caches
+.aws/
+credentials
+
+# 9. Logs & Runtime Temporary Files
+*.log
+logs/
+tmp/
+temp/
+
+# 10. IDE & OS Artifacts
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo

@@ -1,0 +1,11 @@
+# Core Web Framework
+Flask>=3.0.0
+
+# Cryptography & Security (AES-256 / Fernet encryption)
+cryptography>=43.0.0
+
+# Environment Variable Management (.env support)
+python-dotenv>=1.0.0
+
+# AWS Cloud SDK (For Phase 2 S3 integration)
+boto3>=1.35.0
